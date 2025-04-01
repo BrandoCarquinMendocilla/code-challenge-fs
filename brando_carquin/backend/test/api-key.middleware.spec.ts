@@ -1,7 +1,7 @@
 import { Test, TestingModule } from '@nestjs/testing';
-import { ApiKeyMiddleware } from "../src/application/middleware/api-key.middleware";
 import { UnauthorizedException } from '@nestjs/common';
 import { Request, Response } from 'express';
+import { ApiKeyMiddleware } from '../src/application/middleware/api-key.middleware';
 
 describe('ApiKeyMiddleware', () => {
   let middleware: ApiKeyMiddleware;
